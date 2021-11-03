@@ -21,6 +21,31 @@
             color: #fff;
         }
 
+        /*
+            *{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+         body{
+            background: url(./bg.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			display: flex;
+			height: 100vh;
+			justify-content: center;
+			align-items: center;
+        }
+        
+        .container{
+
+			width: 650px;
+			height: 650px;
+			border: 10px solid #fff;
+			color: #fff;
+			flex-direction: col        }
+        */
+        
         input{
             display: block;
         }
@@ -36,6 +61,69 @@
     <input type="text" id="age" placeholder="Example: 28">
     <label for="email">Email: </label>
     <input type="text" id="email" placeholder="Example: example@domain.com">
+    <div class="container">
+			<form action="/action_page.php" id="userform">
+				<input type="text" name="username">
+				<input type="text" placeholder="Your name" required>
+				<input type="text" placeholder="Your Email Address" required>
+				<input type="text" placeholder="Your Phone Number (optional)">
+				<input type="text" placeholder="Your Web Site (optional)">
+				<textarea rows="4" cols="50" name="comment" form="userform">		
+			  <input type="submit">
+			</form>
+		</div>
+		
+<!--
+				<input type="text" placeholder="Your Name" id="name" required>
+				<input type="email" placeholder="Your Mail" id="mail" required>
+				<input type="text" placeholder="Your Message" id="message" required>
+<!--
+    <div class="container">
+        <div class="register-info">
+            <h1>REGISTER TO OUR COURSES</h1>
+            <p>W3docs provides free learning materials for programming languages like HTML, CSS, Java Script, PHP etc.</p>
+            <button class="btn-select">
+				<a href="https://html.com/" target="_blank">Learn HTML</a>
+			</button>
+            <button class="btn-select">
+				<a href="https://www.geeksforgeeks.org/html-course-practice-quiz-1/" target="_blank">Select Quiz</a>
+			</button>
+        </div>
+		<div class="register-form">
+            <form action="" method="POST">
+                <h2>Register here</h2>
+                <div>
+					<label for="name">Name</label>
+					<select >
+						<option value="title" selected>Title</option>
+						<option value="ms">Ms</option>
+						<option value="miss">Miss</option>
+						<option value="mrs">Mrs</option>
+						<option value="mr">Mr</option>
+					</select>
+					<input type="text" placeholder="Name" id="name" required>
+					<input type="text" placeholder="Surname" id="name" required>
+				</div>
+				<div>
+					<label for="email">Email</label>
+					<input type="email" placeholder="example@domain.com" id="email" required>
+					<input type="password" placeholder="password" id="pwd" required>
+				</div>
+				<div>
+					<label for="male">Gender</label>
+					<label for="gender">Male:</label>
+					<input type="radio" name="gender" id="male">
+					<label for="gender">Female:</label>
+					<input type="radio" name="gender" >
+					<input type="button" value="Read the rules">
+				</div>
+				<input type="reset">
+				<input type="submit">				
+            </form>
+        </div>
+    </div>
+	-->
+    
 </form>
 </body>
 </html>
